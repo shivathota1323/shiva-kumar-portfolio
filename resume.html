@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Thota Shiva Kumar | Resume</title>
+    <style>
+      :root {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #152321;
+        font-size: 9pt;
+        line-height: 1.34;
+        font-synthesis: none;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #e8ede9;
+      }
+      .page {
+        width: 8.5in;
+        min-height: 11in;
+        margin: 24px auto;
+        padding: 0 0 26px;
+        background: #fff;
+        box-shadow: 0 12px 45px #10231e20;
+      }
+      .hero {
+        position: relative;
+        padding: 28px 42px 22px 47px;
+        background: #152321;
+        border-left: 7px solid #d5ff68;
+        color: #f4f6f1;
+      }
+      .name {
+        max-width: 425px;
+        margin: 0;
+        font-size: 25pt;
+        letter-spacing: -0.04em;
+        line-height: 1.08;
+      }
+      .role {
+        max-width: 425px;
+        margin: 7px 0 14px;
+        color: #d5ff68;
+        font-size: 8pt;
+        font-weight: 700;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+      }
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px 14px;
+        padding-top: 11px;
+        border-top: 1px solid #41534a;
+        color: #d4ddd5;
+        font-size: 8pt;
+      }
+      .contact a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .resume-photo {
+        position: absolute;
+        top: 22px;
+        right: 42px;
+        width: 64px;
+        height: 64px;
+        border: 2px solid #d5ff68;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center 20%;
+      }
+      .summary {
+        margin: 20px 42px 17px;
+        color: #33423b;
+        font-size: 9pt;
+        line-height: 1.5;
+      }
+      .section {
+        margin: 16px 42px 0;
+      }
+      .section-title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 0 0 10px;
+        color: #152321;
+        font-size: 8pt;
+        font-weight: 700;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+      .section-title:after {
+        height: 1px;
+        flex: 1;
+        background: #d9e1dc;
+        content: "";
+      }
+      .project {
+        position: relative;
+        margin: 0;
+        padding: 0 0 9px 0;
+        border-bottom: 1px solid #e3e8e4;
+      }
+      .project + .project {
+        padding-top: 8px;
+      }
+      .project-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .project h3 {
+        margin: 0;
+        color: #172b24;
+        font-size: 9.5pt;
+        letter-spacing: -0.015em;
+      }
+      .project-links {
+        flex: none;
+        color: #397a69;
+        font-family: Arial, sans-serif;
+        font-size: 6.5pt;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+      .project-links a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .stack {
+        margin-top: 2px;
+        color: #397a69;
+        font-family: Arial, sans-serif;
+        font-size: 7pt;
+      }
+      .detail {
+        margin: 3px 0 0;
+        color: #596963;
+        font-size: 8pt;
+        line-height: 1.36;
+      }
+      .skills-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        color: #596963;
+        font-size: 8pt;
+      }
+      .skills-list b {
+        color: #152321;
+      }
+      .bottom-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+      .bottom-grid .section {
+        margin: 17px 0 0;
+      }
+      .bottom-grid .section-title {
+        margin-bottom: 9px;
+      }
+      .edu-item,
+      .cred-item {
+        margin: 0 0 8px;
+      }
+      .edu-item strong,
+      .cred-item strong {
+        color: #172b24;
+        font-size: 8pt;
+      }
+      .edu-meta,
+      .cred-meta {
+        margin-top: 2px;
+        color: #64736b;
+        font-size: 7.5pt;
+      }
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        margin: 13px 42px 0;
+        padding-top: 8px;
+        border-top: 1px solid #d9e1dc;
+        color: #77857d;
+        font-family: Arial, sans-serif;
+        font-size: 7pt;
+      }
+      .footer span:last-child {
+        letter-spacing: 0.05em;
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        .page {
+          width: auto;
+          min-height: 0;
+          margin: 0;
+          padding-bottom: 22px;
+          box-shadow: none;
+        }
+        @page {
+          size: letter;
+          margin: 0;
+        }
+      }
+      @media (max-width: 700px) {
+        .page {
+          width: 100%;
+          min-height: 100vh;
+          margin: 0;
+          padding-bottom: 25px;
+        }
+        .hero {
+          padding: 25px 23px 20px 28px;
+        }
+        .name {
+          font-size: 23pt;
+        }
+        .contact {
+          gap: 5px 10px;
+        }
+        .summary {
+          margin: 18px 23px 16px;
+        }
+        .section {
+          margin-right: 23px;
+          margin-left: 23px;
+        }
+        .bottom-grid {
+          gap: 15px;
+        }
+        .footer {
+          margin-right: 23px;
+          margin-left: 23px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <img
+          class="resume-photo"
+          src="./shiva-kumar.jpg"
+          alt="Portrait of Thota Shiva Kumar"
+        />
+        <h1 class="name">THOTA SHIVA KUMAR</h1>
+        <p class="role">IT undergraduate / MERN developer / video editor</p>
+        <div class="contact">
+          <a href="tel:+918919551272">+91 89195 51272</a>
+          <a href="mailto:shivathota1323@gmail.com">shivathota1323@gmail.com</a>
+          <span>Jodimetla, Hyderabad</span>
+          <a href="https://github.com/shivathota1323"
+            >github.com/shivathota1323</a
+          >
+          <a href="https://linkedin.com/in/shiva-thota"
+            >linkedin.com/in/shiva-thota</a
+          >
+        </div>
+      </header>
+      <p class="summary">
+        Information Technology undergraduate at Anurag University with MERN
+        stack training from Sunteck Corp under Rajesh Sir. I build full-stack
+        web applications using React, JavaScript, Node.js, Express, MongoDB, and
+        MySQL, and have applied REST APIs, JWT authentication, Socket.IO, Redis,
+        Cloudinary, and Axios across project work. My portfolio includes
+        marketplace, healthcare access, publishing, employee management, and
+        real-time collaboration applications. Alongside development, I edit
+        video with Adobe Premiere Pro, create motion graphics with After
+        Effects, explore 3D animation, and practice competitive programming in
+        Java, C, and JavaScript.
+      </p>
+      <section class="section">
+        <h2 class="section-title">Selected projects</h2>
+        <article class="project">
+          <div class="project-head">
+            <h3>ShopSphere</h3>
+            <span class="project-links"
+              ><a href="https://shop-sphere-mocha-rho.vercel.app/">LIVE ↗</a>
+              &nbsp;
+              <a href="https://github.com/shivathota1323/shop_sphere"
+                >SOURCE ↗</a
+              ></span
+            >
+          </div>
+          <div class="stack">React · Node.js · Express · MongoDB</div>
+          <p class="detail">
+            Marketplace discovery with category filters, search, cart
+            interactions, and a seller entry point.
+          </p>
+        </article>
+        <article class="project">
+          <div class="project-head">
+            <h3>Rare Medicine Locator</h3>
+            <span class="project-links"
+              ><a href="https://rare-medicine-locator.vercel.app/">LIVE ↗</a>
+              &nbsp;
+              <a href="https://github.com/shivathota1323/Rare-Medicine-locator"
+                >SOURCE ↗</a
+              ></span
+            >
+          </div>
+          <div class="stack">React · Express · MongoDB · JWT</div>
+          <p class="detail">
+            Medicine discovery and requests with account access, a dashboard,
+            request workflows, and in-app chat.
+          </p>
+        </article>
+        <article class="project">
+          <div class="project-head">
+            <h3>Blog App</h3>
+            <span class="project-links"
+              ><a href="https://blog-app-shiva.vercel.app/">LIVE ↗</a> &nbsp;
+              <a href="https://github.com/shivathota1323/BLOG-APP"
+                >SOURCE ↗</a
+              ></span
+            >
+          </div>
+          <div class="stack">React · Node.js · MongoDB · Cloudinary</div>
+          <p class="detail">
+            Role-based publishing for readers, authors, and admins, with secure
+            sessions, comments, and image uploads.
+          </p>
+        </article>
+        <article class="project">
+          <div class="project-head">
+            <h3>Employee Manager</h3>
+            <span class="project-links"
+              ><a href="https://mern-mini-app-two.vercel.app/">LIVE ↗</a> &nbsp;
+              <a href="https://github.com/shivathota1323/Mern-mini-app"
+                >SOURCE ↗</a
+              ></span
+            >
+          </div>
+          <div class="stack">React · Express · MongoDB · Axios</div>
+          <p class="detail">
+            A full-stack employee directory to create, view, edit, and remove
+            employee records.
+          </p>
+        </article>
+        <article class="project">
+          <div class="project-head">
+            <h3>
+              WorkLoop <span style="font-weight: 400">/ group project</span>
+            </h3>
+            <span class="project-links"
+              ><a href="https://workloop-realtime-chat.vercel.app/">LIVE ↗</a>
+              &nbsp;
+              <a
+                href="https://github.com/WorkLoop-Developers/workloop-realtime-chat"
+                >SOURCE ↗</a
+              ></span
+            >
+          </div>
+          <div class="stack">MERN · Socket.IO · Redis · Cloudinary</div>
+          <p class="detail">
+            Real-time team collaboration with workspaces, channels, direct
+            messages, threads, file sharing, and reminders.
+          </p>
+        </article>
+        <article class="project">
+          <div class="project-head">
+            <h3>
+              Article Publishing Platform
+              <span style="font-weight: 400">/ capstone</span>
+            </h3>
+            <span class="project-links"
+              ><a href="https://github.com/shivathota1323/ATP_24eg112c60"
+                >GITHUB ↗</a
+              ></span
+            >
+          </div>
+          <div class="stack">MongoDB · Express · React · Node.js</div>
+          <p class="detail">
+            A multi-role publishing app for readers, authors, and admins, with
+            article management and reader comments.
+          </p>
+        </article>
+      </section>
+      <section class="section">
+        <h2 class="section-title">Technical &amp; creative skills</h2>
+        <div class="skills-list">
+          <div>
+            <b>Development:</b> React, JavaScript, Node.js, Express, REST APIs,
+            MongoDB, MySQL
+          </div>
+          <div>
+            <b>Programming:</b> Java, C, JavaScript, competitive programming
+          </div>
+          <div>
+            <b>Web &amp; collaboration tools:</b> HTML, CSS, Git, VS Code, REST
+            APIs, JWT, Socket.IO, Redis, Cloudinary, Axios
+          </div>
+          <div>
+            <b>Video &amp; motion:</b> Adobe Premiere Pro, After Effects, video
+            editing, motion graphics, 3D animation, visual storytelling
+          </div>
+        </div>
+      </section>
+      <div class="section bottom-grid">
+        <section class="section">
+          <h2 class="section-title">Education</h2>
+          <div class="edu-item">
+            <strong>B.Tech, Information Technology</strong>
+            <div class="edu-meta">
+              Anurag University, Hyderabad · 2024–2028 · GPA 8.92
+            </div>
+          </div>
+          <div class="edu-item">
+            <strong>Narayana Junior College</strong>
+            <div class="edu-meta">Intermediate, 2022–2024 · GPA 9.89</div>
+          </div>
+          <div class="edu-item">
+            <strong>Secondary School</strong>
+            <div class="edu-meta">2022 · GPA 9.2</div>
+          </div>
+        </section>
+        <section class="section">
+          <h2 class="section-title">Training &amp; credentials</h2>
+          <div class="cred-item">
+            <strong>MERN Stack Training</strong>
+            <div class="cred-meta">
+              Sunteck Corp · Rajesh Sir · MongoDB, Express, React, Node.js
+            </div>
+          </div>
+          <div class="cred-item">
+            <strong>HackerRank certificates</strong>
+            <div class="cred-meta">
+              Java and C · competitive programming practice
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <span>English · Telugu · Hindi</span
+        ><span>COMMUNICATION · TEAMWORK · PROBLEM SOLVING</span>
+      </footer>
+    </main>
+  </body>
+</html>
